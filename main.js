@@ -18,7 +18,7 @@ var mainState = {
 		// Set the background color to blue
 		//game.stage.backgroundColor = '#3598db';
 		
-		stompSound = game.sound.add('stomp');
+		this.stompSound = game.sound.add('stomp');
 		
 		this.sky1 = this.game.add.tileSprite(0,0,400,450, 'sky1');
 		this.world.sendToBack(this.sky1);
@@ -76,9 +76,9 @@ var mainState = {
 		this.score = 0;
 		this.scoreText = game.add.text(25, 400, 'score: 0', { font: "20px Arial", fill: "#ffffff", align: "left" });
 		//livesText = game.add.text(325, 400, 'lives: 3', { font: "20px Arial", fill: "#ffffff", align: "left" });
-		introText.anchor.setTo(0.5, 0.5);
+		//introText.anchor.setTo(0.5, 0.5);
 		
-		this.stompSound = game.add.audio('stomp');
+		//this.stompSound = game.add.audio('stomp');
 
 		//game.input.onDown.add(releaseBall, this);
     },
